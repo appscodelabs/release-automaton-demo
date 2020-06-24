@@ -1,7 +1,7 @@
 {
   "product_line": "Stash",
   "release": "v2020.6.23",
-  "release_date": "2020-06-24T06:45:02.022063388Z",
+  "release_date": "2020-06-24T12:46:04.602932682Z",
   "release_project_url": "https://github.com/",
   "docs_url": "https://stash.run/docs/v2020.6.23",
   "kubernetes_version": "1.12+",
@@ -193,6 +193,15 @@
               "Subject": "Trigger the workflow on push or pull request"
             }
           ]
+        }
+      ]
+    },
+    {
+      "url": "github.com/appscode-cloud/docs",
+      "releases": [
+        {
+          "tag": "v2020.6.23",
+          "commits": null
         }
       ]
     },

@@ -62,6 +62,13 @@
 
 
 
+## [appscode-cloud/docs](https://github.com/appscode-cloud/docs)
+
+### [v2020.6.23](https://github.com/appscode-cloud/docs/releases/tag/v2020.6.23)
+
+
+
+
 ## [appscode-cloud/installer](https://github.com/appscode-cloud/installer)
 
 ### [v0.10.0-alpha.3](https://github.com/appscode-cloud/installer/releases/tag/v0.10.0-alpha.3)
