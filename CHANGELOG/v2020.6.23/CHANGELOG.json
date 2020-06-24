@@ -1,7 +1,7 @@
 {
   "product_line": "Stash",
   "release": "v2020.6.23",
-  "release_date": "2020-06-24T05:40:47.353862899Z",
+  "release_date": "2020-06-24T06:02:08.270849454Z",
   "release_project_url": "https://github.com/",
   "docs_url": "https://stash.run/docs/v2020.6.23",
   "kubernetes_version": "1.12+",
@@ -571,6 +571,40 @@
             {
               "SHA": "efe4799",
               "Subject": "Add openapi v3 schema for values file (#27)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "github.com/appscode-cloud/stash",
+      "releases": [
+        {
+          "tag": "v0.10.0-alpha.3",
+          "commits": [
+            {
+              "SHA": "76650c35",
+              "Subject": "Prepare for release v0.10.0-alpha.3 (#1)"
+            },
+            {
+              "SHA": "9fa95666",
+              "Subject": "Add workflow to update docs (#1136)"
+            },
+            {
+              "SHA": "95a62a95",
+              "Subject": "Update update-release-tracker.sh"
+            },
+            {
+              "SHA": "379c90d5",
+              "Subject": "Update update-release-tracker.sh"
+            },
+            {
+              "SHA": "cd0a70ee",
+              "Subject": "Use GITHUB_BASE_REF to detect target branch"
+            },
+            {
+              "SHA": "e27c5f66",
+              "Subject": "Add script to update release tracker on pr merge (#1132)"
             }
           ]
         }
