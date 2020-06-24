@@ -15,6 +15,28 @@
 
 
 
+## [appscode-cloud/catalog](https://github.com/appscode-cloud/catalog)
+
+### [v2020.6.23](https://github.com/appscode-cloud/catalog/releases/tag/v2020.6.23)
+
+- [1bda3e5](https://github.com/appscode-cloud/catalog/commit/1bda3e5) Prepare for release v2020.6.23 (#1)
+- [a5ea578](https://github.com/appscode-cloud/catalog/commit/a5ea578) Update update-release-tracker.sh
+- [2ef75bb](https://github.com/appscode-cloud/catalog/commit/2ef75bb) Update update-release-tracker.sh
+- [440b1d9](https://github.com/appscode-cloud/catalog/commit/440b1d9) Add script to update release tracker on pr merge (#24)
+- [18d2718](https://github.com/appscode-cloud/catalog/commit/18d2718) Update catalog.json format
+- [137d320](https://github.com/appscode-cloud/catalog/commit/137d320) Use Go templates to generate deploy scripts (#23)
+- [6ca402a](https://github.com/appscode-cloud/catalog/commit/6ca402a) Generate catalog.sh and readme using Go template (#22)
+- [0d00857](https://github.com/appscode-cloud/catalog/commit/0d00857) Fix crd path in CI workflow (#18)
+- [7a9fd44](https://github.com/appscode-cloud/catalog/commit/7a9fd44) Remove release workflow (#19)
+- [8a617d9](https://github.com/appscode-cloud/catalog/commit/8a617d9) Make script ready for templating (#21)
+- [be731f1](https://github.com/appscode-cloud/catalog/commit/be731f1) Remove non-patched version of addons (#20)
+- [cb0310e](https://github.com/appscode-cloud/catalog/commit/cb0310e) Create .kodiak.toml
+- [66a822d](https://github.com/appscode-cloud/catalog/commit/66a822d) Use Go 1.14.3
+- [072db93](https://github.com/appscode-cloud/catalog/commit/072db93) Update crazy-max/ghaction-docker-buildx flag
+- [9c0be4d](https://github.com/appscode-cloud/catalog/commit/9c0be4d) Trigger the workflow on push or pull request
+
+
+
 ## [appscode-cloud/cli](https://github.com/appscode-cloud/cli)
 
 ### [v0.10.0-alpha.3](https://github.com/appscode-cloud/cli/releases/tag/v0.10.0-alpha.3)
