@@ -15,6 +15,20 @@
 
 
 
+## [appscode-cloud/bundles](https://github.com/appscode-cloud/bundles)
+
+### [v2020.6.23](https://github.com/appscode-cloud/bundles/releases/tag/v2020.6.23)
+
+- [145809f](https://github.com/appscode-cloud/bundles/commit/145809f) Prepare for release v2020.6.23 (#1)
+- [e323ffb](https://github.com/appscode-cloud/bundles/commit/e323ffb) Remove non-patched version addons (#5)
+- [2f3d8b8](https://github.com/appscode-cloud/bundles/commit/2f3d8b8) Shorten bundle description (#3)
+- [15e83fc](https://github.com/appscode-cloud/bundles/commit/15e83fc) Shorten chart description (#2)
+- [f980df7](https://github.com/appscode-cloud/bundles/commit/f980df7) Tag chart and app version as string for yq
+- [e29b80e](https://github.com/appscode-cloud/bundles/commit/e29b80e) Add commands to update chart version
+- [1d8197b](https://github.com/appscode-cloud/bundles/commit/1d8197b) Add Stash bundles (#1)
+
+
+
 ## [appscode-cloud/catalog](https://github.com/appscode-cloud/catalog)
 
 ### [v2020.6.23](https://github.com/appscode-cloud/catalog/releases/tag/v2020.6.23)
