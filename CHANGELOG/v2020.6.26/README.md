@@ -168,3 +168,16 @@
 
 
 
+## [appscode-cloud/stash](https://github.com/appscode-cloud/stash)
+
+### [v0.10.0-alpha.4](https://github.com/appscode-cloud/stash/releases/tag/v0.10.0-alpha.4)
+
+- [7b972101](https://github.com/appscode-cloud/stash/commit/7b972101) Prepare for release v0.10.0-alpha.4 (#1)
+- [9fa95666](https://github.com/appscode-cloud/stash/commit/9fa95666) Add workflow to update docs (#1136)
+- [95a62a95](https://github.com/appscode-cloud/stash/commit/95a62a95) Update update-release-tracker.sh
+- [379c90d5](https://github.com/appscode-cloud/stash/commit/379c90d5) Update update-release-tracker.sh
+- [cd0a70ee](https://github.com/appscode-cloud/stash/commit/cd0a70ee) Use GITHUB_BASE_REF to detect target branch
+- [e27c5f66](https://github.com/appscode-cloud/stash/commit/e27c5f66) Add script to update release tracker on pr merge (#1132)
+
+
+
