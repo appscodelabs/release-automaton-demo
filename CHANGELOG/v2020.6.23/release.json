@@ -111,42 +111,11 @@
     }
   ],
   "external_projects": {
-    "github.com/kubedb/apimachinery": {},
-    "github.com/kubedb/cli": {},
-    "github.com/kubedb/elasticsearch": {
+    "github.com/appscode-cloud/elasticsearch": {
       "commands": [
-        "echo STASH_VERSION=${STASH_VERSION} > Makefile.env",
+        "echo STASH_VERSION=${APPSCODE_CLOUD_STASH_TAG} > Makefile.env",
         "echo STASH_CATALOG_VERSION=${STASH_CATALOG_VERSION} >> Makefile.env"
       ]
-    },
-    "github.com/kubedb/memcached": {},
-    "github.com/kubedb/mongodb": {
-      "commands": [
-        "echo STASH_VERSION=${STASH_VERSION} > Makefile.env",
-        "echo STASH_CATALOG_VERSION=${STASH_CATALOG_VERSION} >> Makefile.env"
-      ]
-    },
-    "github.com/kubedb/mysql": {
-      "commands": [
-        "echo STASH_VERSION=${STASH_VERSION} > Makefile.env",
-        "echo STASH_CATALOG_VERSION=${STASH_CATALOG_VERSION} >> Makefile.env"
-      ]
-    },
-    "github.com/kubedb/operator": {},
-    "github.com/kubedb/percona-xtradb": {
-      "commands": [
-        "echo STASH_VERSION=${STASH_VERSION} > Makefile.env",
-        "echo STASH_CATALOG_VERSION=${STASH_CATALOG_VERSION} >> Makefile.env"
-      ]
-    },
-    "github.com/kubedb/pgbouncer": {},
-    "github.com/kubedb/postgres": {
-      "commands": [
-        "echo STASH_VERSION=${STASH_VERSION} > Makefile.env",
-        "echo STASH_CATALOG_VERSION=${STASH_CATALOG_VERSION} >> Makefile.env"
-      ]
-    },
-    "github.com/kubedb/proxysql": {},
-    "github.com/kubedb/redis": {}
+    }
   }
 }
