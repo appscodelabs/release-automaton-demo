@@ -18,9 +18,15 @@ jobs:
           go-version: 1.14
         id: go
 
+      - name: Install yq
+        run: |
+          curl -fsSL -o yq https://github.com/mikefarah/yq/releases/download/3.3.0/yq_linux_amd64
+          chmod +x yq
+          sudo mv yq /usr/local/bin/yq
+
       - name: Install release automaton
         run: |
-          curl -fsSL -o release-automaton https://github.com/appscodelabs/release-automaton/releases/download/v0.0.4/release-automaton-linux-amd64
+          curl -fsSL -o release-automaton https://github.com/appscodelabs/release-automaton/releases/download/v0.0.5/release-automaton-linux-amd64
           chmod +x release-automaton
           sudo mv release-automaton /usr/local/bin/release-automaton
 
@@ -68,8 +74,6 @@ jobs:
           }
 
           hub pr checkout ${{ github.event.issue.number }}
-          ls -l
-          echo "--------------------------------------------------"
 
           release-automaton release run \
             --release-tracker=${{ github.event.issue.html_url }} \
