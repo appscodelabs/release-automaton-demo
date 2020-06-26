@@ -90,3 +90,4 @@ jobs:
             --release-tracker=${{ github.event.issue.html_url }} \
             --release-file=./CHANGELOG/${RELEASE}/release.json \
             --comment-id=${{ github.event.comment.id }}
+          release-automaton release readme
