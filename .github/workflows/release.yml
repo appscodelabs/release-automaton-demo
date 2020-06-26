@@ -30,6 +30,11 @@ jobs:
           chmod +x hugo-tools
           sudo mv hugo-tools /usr/local/bin/hugo-tools
 
+      - name: Install GitHub CLI
+        run: |
+          curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
+          sudo mv bin/hub /usr/local/bin
+
       - name: Prepare git
         env:
           GITHUB_USER: 1gtm
@@ -41,10 +46,12 @@ jobs:
           git remote set-url origin https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
 
       - name: Release
-        if: startsWith(github.event.issue.title, 'Release:') && contains(github.event.issue.labels, 'locked') == false
+        if: startsWith(github.event.issue.title, 'Release:') && contains(github.event.issue.html_url, '/pull/') && contains(github.event.issue.labels, 'locked') == false
         env:
           GITHUB_USER: 1gtm
           GITHUB_TOKEN: ${{ secrets.LGTM_GITHUB_TOKEN }}
+          RELEASE_TRACKER: ${{ github.event.issue.html_url }}
+          PR_TITLE: ${{ github.event.issue.title }}
         run: |
           title="${{ github.event.issue.title }}"
           while IFS=$': \r\t' read -r marker v ignored; do
@@ -59,12 +66,11 @@ jobs:
               echo "Release number not found in issue title."
               exit 0
           }
-          ls -l ${GITHUB_WORKSPACE}
+
+          hub pr checkout ${{ github.event.issue.number }}
+          ls -l
           echo "--------------------------------------------------"
-          ls -l ${GITHUB_WORKSPACE}/CHANGELOG
-          echo "--------------------------------------------------"
-          ls -l ${GITHUB_WORKSPACE}/CHANGELOG/${RELEASE}
-          echo "--------------------------------------------------"
+
           release-automaton release run \
             --release-tracker=${{ github.event.issue.html_url }} \
-            --release-file=${GITHUB_WORKSPACE}/CHANGELOG/${RELEASE}/release.json
+            --release-file=./CHANGELOG/${RELEASE}/release.json
