@@ -88,4 +88,5 @@ jobs:
 
           release-automaton release run \
             --release-tracker=${{ github.event.issue.html_url }} \
-            --release-file=./CHANGELOG/${RELEASE}/release.json
+            --release-file=./CHANGELOG/${RELEASE}/release.json \
+            --comment-id=${{ github.event.comment.id }}
