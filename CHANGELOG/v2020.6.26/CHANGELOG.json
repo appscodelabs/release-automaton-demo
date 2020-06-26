@@ -1,7 +1,7 @@
 {
   "product_line": "Stash",
   "release": "v2020.6.26",
-  "release_date": "2020-06-26T13:55:25.476839578Z",
+  "release_date": "2020-06-26T14:06:38.610873644Z",
   "release_project_url": "https://github.com/appscodelabs/release-automaton-demo",
   "docs_url": "https://stash.run/docs/v2020.6.26",
   "kubernetes_version": "1.12+",
@@ -41,6 +41,15 @@
               "Subject": "Update to Kubernetes v1.18.3"
             }
           ]
+        }
+      ]
+    },
+    {
+      "url": "github.com/appscode-cloud/catalog",
+      "releases": [
+        {
+          "tag": "v2020.6.26",
+          "commits": null
         }
       ]
     },
