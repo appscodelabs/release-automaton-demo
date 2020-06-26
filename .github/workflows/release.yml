@@ -36,6 +36,12 @@ jobs:
           chmod +x hugo-tools
           sudo mv hugo-tools /usr/local/bin/hugo-tools
 
+      - name: Install render-gotpl
+        run: |
+          curl -fsSL -o render-gotpl https://github.com/appscodelabs/render-gotpl/releases/download/v0.1.4/render-gotpl-linux-amd64
+          chmod +x render-gotpl
+          sudo mv render-gotpl /usr/local/bin/render-gotpl
+
       - name: Install GitHub CLI
         run: |
           curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
