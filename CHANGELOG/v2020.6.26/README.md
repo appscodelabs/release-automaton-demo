@@ -15,6 +15,13 @@
 
 
 
+## [appscode-cloud/catalog](https://github.com/appscode-cloud/catalog)
+
+### [v2020.6.26](https://github.com/appscode-cloud/catalog/releases/tag/v2020.6.26)
+
+
+
+
 ## [appscode-cloud/cli](https://github.com/appscode-cloud/cli)
 
 ### [v0.10.0-alpha.4](https://github.com/appscode-cloud/cli/releases/tag/v0.10.0-alpha.4)
